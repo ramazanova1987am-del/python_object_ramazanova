@@ -12,3 +12,6 @@ else:
 
     print(f"Исходное число: {num}")
     print(f"Новое число: {new_num}")
+except ValueError:
+    # выдает ошибку
+    print("Ошибка")
