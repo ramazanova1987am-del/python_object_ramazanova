@@ -1,17 +1,9 @@
 #дано трезначное число. ввести число, полученное при постановке цифр сотен и десятков исходного числа (например 123 перейдет в 132)
-num = int(input("Введите трехзначное число: "))
-if not ( 100 <= num <=999):
-    print("Ошибка : число должно быть трехзначным!")
-else:
-    hundreds = num // 100
-    tens = (num // 10) % 10
-    units = num % 10
+int(input())
+hundreds = n // 100
+tens = n // 10 % 10
+units = n % 10
+print ( tens * 100 + hundreds * 10 + units ) 
 
-    # меняем десятки и единицы
-    new_num = hundreds * 100 + units * 10 + tens
-
-    print(f"Исходное число: {num}")
-    print(f"Новое число: {new_num}")
-except ValueError:
-    # выдает ошибку
-    print("Ошибка")
+except VallueError:
+print ("Введите целое число")
