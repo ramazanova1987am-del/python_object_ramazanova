@@ -1,16 +1,16 @@
-# This is a sample Python script.
+#вар20
+#дано трезначное число. ввести число, полученное при постановке цифр сотен и десятков исходного числа (например 123 перейдет в 132)
+while True:
+    try:
+        #вводим значения
+        n = int(input('Введите трехзначное число: '))
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+        hundreds = n // 100
+        tens = n // 10 % 10
+        units = n % 10
+
+        print( tens * 100 + hundreds * 10 + units )
+    except ValueError:
+        print('ошибка! Введите число!')
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
