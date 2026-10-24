@@ -12,6 +12,3 @@ while True:
         print( tens * 100 + hundreds * 10 + units )
     except ValueError:
         print('ошибка! Введите число!')
-
-
-
