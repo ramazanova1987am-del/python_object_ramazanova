@@ -1,0 +1,28 @@
+#проверить истинность высказывания. 
+#Среди трех данных чисел есть хотя бы одна пара взаимно противоположных. 
+
+a, b, c = input(‘введите 1 число’), input(‘введите 2 число’), input(‘введите 3 число’)
+ while type(a) != float: 
+try:
+     a = float(a)
+except ValueError:
+     print(‘неправильно ввели’)
+     a = input(‘введите первое число’)
+
+ while type(b) != float: 
+try:
+     b = float(b)
+except ValueError:
+     print(‘неправильно ввели’)
+     b = input(‘введите второе число’)
+
+while type(c) != float: 
+try:
+    c = float(c) 
+except ValueError:
+    print(‘неправильно ввели’)
+    c = input(‘введите третье число’)
+if (a + b == 0) or (a + c == 0) or (b + c == 0) : 
+    print (‘да, есть пара взаимно противоположных чисел’)
+else: 
+     print (‘ нет пары взаимно противоположных чисел’)
