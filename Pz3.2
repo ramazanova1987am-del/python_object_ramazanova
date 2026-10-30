@@ -1,0 +1,25 @@
+#Даны два числа. Вывести сначала большее. 
+#Затем меньшее.
+
+a, b = input(‘Введите 1 число’), input(‘Введите 2 число’)
+
+while type(a) != float:
+try:
+     a = float(a)
+except ValueError: 
+     print(‘Неправильное число!’)
+     a = input(‘введите 1 число’)
+
+while type(b) != float:
+try:
+     b = float(b)
+except ValueError:
+     print(‘неправильное число!’)
+     b = input(‘введите 2 число’)
+a = int(input())
+b = int(input())
+if (a > b) :
+     print (a, b)
+else :
+      print (b, a) 
+
